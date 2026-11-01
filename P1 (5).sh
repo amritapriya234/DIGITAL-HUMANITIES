@@ -1,0 +1,1 @@
+python scripts/transcribe_whisper.py

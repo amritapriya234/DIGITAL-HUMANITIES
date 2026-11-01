@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Oral History Interview with Margaret Vance</title>
+        <respStmt>
+          <resp>Digitized, transcribed, and encoded by</resp>
+          <name>Voices of the Archive Team</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Community History Digital Archive</publisher>
+        <dc:title>Oral History Interview with Margaret Vance</dc:title>
+        <dc:creator>Margaret Vance</dc:creator>
+        <dc:date>2026-10-15</dc:date>
+        <dc:subject>Labor History -- Industrialization -- 20th Century</dc:subject>
+      </publicationStmt>
+      <sourceDesc>
+        <recordingStmt>
+          <recording type="audio">
+            <media mimeType="audio/wav" url="http://localhost:8080/files/interview_101.wav"/>
+          </recording>
+        </recordingStmt>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="interview">
+        <sp who="#vance_m_1942">
+          <speaker>Margaret Vance</speaker>
+          <u start="0.0s" end="4.12s">We moved to the district in the spring of 1954 when the factories were expanding.</u>
+        </sp>
+        <sp who="#vance_m_1942">
+          <speaker>Margaret Vance</speaker>
+          <u start="4.5s" end="8.9s">Everyone in the neighborhood worked at the textile mill down by the river.</u>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>

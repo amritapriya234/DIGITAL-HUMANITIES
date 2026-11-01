@@ -1,0 +1,14 @@
+oral-history-preservation/
+├── .gitignore
+├── docker-compose.yml
+├── data/
+│   ├── raw_audio/
+│   │   └── interview_101.wav
+│   └── output/
+│       ├── interview_101.json
+│       ├── interview_101_dublin_core.xml
+│       └── interview_101_preservation.xml
+└── scripts/
+    ├── requirements.txt
+    ├── transcribe_whisper.py
+    └── generate_tei_xml.py

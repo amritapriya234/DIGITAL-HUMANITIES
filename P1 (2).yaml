@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  database:
+    image: mariadb:10.6
+    container_name: omeka_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: omeka_s
+      MYSQL_USER: omeka_user
+      MYSQL_PASSWORD: omeka_password
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+
+  omeka-s:
+    image: omekas/omekas:latest
+    container_name: omeka_web
+    ports:
+      - "8080:80"
+    environment:
+      OMEKA_DB_HOST: database
+      OMEKA_DB_USER: omeka_user
+      OMEKA_DB_PASSWORD: omeka_password
+      OMEKA_DB_NAME: omeka_s
+    volumes:
+      - ./data/output:/var/www/html/files
+    depends_on:
+      - database
+    restart: always
+
+volumes:
+  db_data:
